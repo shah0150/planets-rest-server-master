@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h1= title
+  h2 REST Resources
+  h4 Bluemix
+  ul
+    li: a(href="https://planets-hurdleg.mybluemix.net/planets" target="_blank") https://planets-hurdleg.mybluemix.net/planets
+    li: a(href="https://planets-hurdleg.mybluemix.net/planets/{id}" target="_blank") https://planets-hurdleg.mybluemix.net/planets/{id}
+    li: a(href="https://planets-hurdleg.mybluemix.net/planets/{id}image" target="_blank") https://planets-hurdleg.mybluemix.net/planets/{id}/image
+
+  h4 Localhost
+  ul
+    li: a(href="http://localhost:3000/planets" target="_blank") http://localhost:3000/planets
+    li: a(href="http://localhost:3000/planets/{id}" target="_blank") http://localhost:3000/planets/{id}
+    li: a(href="http://localhost:3000/planets/{id}/image" target="_blank") http://localhost:3000/planets/{id}/image
+
+  h2 Home Page
+  h4 Bluemix
+  ul
+    li: a(href="https://planets-hurdleg.mybluemix.net" target="_blank") https://planets-hurdleg.mybluemix.net
+
+  h4 Localhost
+  ul
+    li: a(href="http://localhost:3000" target="_blank") http://localhost:3000
+
+  h2 Source Code
+  p Available from GitHub:
+  a(href="https://github.com/hurdleg/planets-rest-server" target="_blank") https://github.com/hurdleg/planets-ottawa-rest-server
+
+  h2 References
+  p All of the planet information and images were downloaded from:
+  ol
+    li: a(href="http://solarsystem.nasa.gov/planets/" target="_blank") Solar System Exploration by NASA
